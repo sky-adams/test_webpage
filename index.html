@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
- <head><title>Example web page</title></head>
- <body>
-   <h1>Hello, World</h1>
-   <p>
-     Welcome to my web page.  This
-     web page is a demonstration of
-     HTML.
-   </p>
- </body>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
 </html>
